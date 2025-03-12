@@ -97,6 +97,8 @@
 </template>
 
 <script lang="ts" setup>
+import { generateNumberBetweenOneAndNine } from '~/utils/utils'
+
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const passCode = ref([0, 0, 0, 0])
 const step = ref(0)
@@ -110,10 +112,10 @@ const win = ref()
 
 
 const generatePassCode = () => {
-    passCode.value[0] = Math.floor(Math.random() * 9) + 1
-    passCode.value[1] = Math.floor(Math.random() * 9) + 1
-    passCode.value[2] = Math.floor(Math.random() * 9) + 1
-    passCode.value[3] = Math.floor(Math.random() * 9) + 1
+    passCode.value[0] = generateNumberBetweenOneAndNine()
+    passCode.value[1] = generateNumberBetweenOneAndNine()
+    passCode.value[2] = generateNumberBetweenOneAndNine()
+    passCode.value[3] = generateNumberBetweenOneAndNine()
     step.value = 1
 }
 

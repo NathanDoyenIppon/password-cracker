@@ -9,13 +9,16 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "npm run test:watch",
+    "test:watch": "vitest --"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.2.0",
     "@nuxt/ui": "^2.21.1",
     "eslint": "^9.22.0",
     "nuxt": "^3.16.0",
+    "vitest": "^3.0.8",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
