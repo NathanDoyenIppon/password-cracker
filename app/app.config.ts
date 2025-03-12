@@ -1,3 +1,3 @@
 export default defineAppConfig({
-    title: 'Pass crack',
-  })
+  title: 'Pass crack',
+})
