@@ -133,7 +133,7 @@ const nextStep = () => {
                 if (firstModel.value[i] === passCode.value[i]) {
                     firstHint.value[i] = 'green'
                 }
-                else if (passCode.value.includes(firstModel.value[i])) {
+                else if (passCode.value.includes(firstModel.value[i]!)) {
                     firstHint.value[i] = 'orange'
                 }
                 else {
@@ -155,7 +155,7 @@ const nextStep = () => {
                 if (secondModel.value[i] === passCode.value[i]) {
                     secondHint.value[i] = 'green'
                 }
-                else if (passCode.value.includes(secondModel.value[i])) {
+                else if (passCode.value.includes(secondModel.value[i]!)) {
                     secondHint.value[i] = 'orange'
                 }
                 else {
@@ -177,7 +177,7 @@ const nextStep = () => {
                 if (thirdModel.value[i] === passCode.value[i]) {
                     thirdHint.value[i] = 'green'
                 }
-                else if (passCode.value.includes(thirdModel.value[i])) {
+                else if (passCode.value.includes(thirdModel.value[i]!)) {
                     thirdHint.value[i] = 'orange'
                 }
                 else {
