@@ -102,7 +102,7 @@ import { generateNumberBetweenOneAndNine } from '~/utils/utils'
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 const passCode = ref([0, 0, 0, 0])
 const step = ref(0)
-const firstModel = ref([1, 1, 1, 1])
+const firstModel = ref<number[]>([1, 1, 1, 1])
 const firstHint = ref(['yellow', 'yellow', 'yellow', 'yellow'])
 const secondModel = ref([1, 1, 1, 1])
 const secondHint = ref(['yellow', 'yellow', 'yellow', 'yellow'])
